@@ -1,0 +1,16 @@
+name: build
+
+on:
+  workflow_dipatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: sudo apt-get purge --auto-remove python3.10
+      - run: sudo apt-get remove python3.10
+      - run: python --version
+      - run: sudo apt install python2
+      - run: virtualenv -p /usr/bin/python2.7 --distribute temp-python
+      - run: source temp-python/bin/activate
