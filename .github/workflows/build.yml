@@ -1,7 +1,6 @@
 name: build
 
-on:
-  workflow_dipatch:
+on: workflow_dipatch
 
 jobs:
   build:
