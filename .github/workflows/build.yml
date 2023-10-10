@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
-      conrainer: 
+      container: 
         image: python:2.7.18-buster
     steps:
       - run: python --version
