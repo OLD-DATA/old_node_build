@@ -5,10 +5,7 @@ on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
-
+      conrainer: 
+        image: python:2.7.18-buster
     steps:
-      - run: pip install virtualenv
-      - run: sudo apt-get purge --auto-remove python3.10
-      - run: sudo apt-get remove python3.10
-      - run: sudo apt install python2
       - run: python --version
