@@ -11,6 +11,4 @@ jobs:
       - run: sudo apt-get purge --auto-remove python3.10
       - run: sudo apt-get remove python3.10
       - run: sudo apt install python2
-      - run: virtualenv -p /usr/bin/python2.7 --distribute temp-python
-      - run: source temp-python/bin/activate
       - run: python --version
